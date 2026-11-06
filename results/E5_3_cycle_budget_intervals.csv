@@ -1,0 +1,16 @@
+K,metric,point_estimate_W_per_kg,lower_2p5_W_per_kg,upper_97p5_W_per_kg,bootstrap_draws,interpretation
+5,S,0.15655187822914818,0.13138730705937043,0.17983724428427908,10000,descriptive fixed-model participant-cluster pointwise
+5,RMSE_K,0.62204354649185378,0.52169763658050561,0.73087865719592793,10000,descriptive fixed-model participant-cluster pointwise
+5,Delta_RMSE_K_minus_full,0.019432976303045746,0.01262656469937559,0.028215026755954373,10000,descriptive fixed-model participant-cluster pointwise
+10,S,0.1286654444833906,0.10868521187506403,0.14644765619637143,10000,descriptive fixed-model participant-cluster pointwise
+10,RMSE_K,0.61709397821259671,0.51515338037145419,0.72839510278852093,10000,descriptive fixed-model participant-cluster pointwise
+10,Delta_RMSE_K_minus_full,0.014483408023788669,0.0098165819221817281,0.020168881105205171,10000,descriptive fixed-model participant-cluster pointwise
+20,S,0.10287667315967235,0.088141277277425198,0.1165392076195024,10000,descriptive fixed-model participant-cluster pointwise
+20,RMSE_K,0.61298466195629298,0.51011488446670461,0.7242781969584634,10000,descriptive fixed-model participant-cluster pointwise
+20,Delta_RMSE_K_minus_full,0.010374091767484939,0.006229701953986244,0.015140645084275664,10000,descriptive fixed-model participant-cluster pointwise
+50,S,0.073726583644772109,0.062853537259424455,0.084288857306611065,10000,descriptive fixed-model participant-cluster pointwise
+50,RMSE_K,0.60951284493503666,0.5052320399078476,0.72170622474365531,10000,descriptive fixed-model participant-cluster pointwise
+50,Delta_RMSE_K_minus_full,0.0069022747462286205,0.0027740655277254667,0.012168967457431996,10000,descriptive fixed-model participant-cluster pointwise
+100,S,0.047869684650790494,0.04012694948505547,0.054926740752127508,10000,descriptive fixed-model participant-cluster pointwise
+100,RMSE_K,0.60748545228208017,0.50258860990853504,0.71996295765565166,10000,descriptive fixed-model participant-cluster pointwise
+100,Delta_RMSE_K_minus_full,0.0048748820932721371,0.0004293248122304278,0.010782650449876035,10000,descriptive fixed-model participant-cluster pointwise

@@ -1,0 +1,5 @@
+comparison,status,reference,candidate,cohort,n_participants,n_trials,point_delta_RMSE_W_per_kg,lower_95pct_W_per_kg,upper_95pct_W_per_kg,bootstrap_resamples,seed
+B0_minus_G,primary_population,B0,G,population,21,284,0.3658475505670199,0.21545783398423332,0.50678102205446662,10000,2026
+C_minus_CplusG,primary_population,C,C+G,population,21,284,-0.083754361292240898,-0.1465701199511357,-0.013773490208975232,10000,2026
+A_minus_Ccal_K3,secondary_personal,A_K3,C_CAL_K3,personal,20,58,0.15020332001277981,0.068314535350767897,0.22522617577484574,10000,2026
+A_minus_Ccal_K6,secondary_personal,A_K6,C_CAL_K6,personal,20,58,0.17470690201898537,0.096024811965213716,0.24930076111141025,10000,2026

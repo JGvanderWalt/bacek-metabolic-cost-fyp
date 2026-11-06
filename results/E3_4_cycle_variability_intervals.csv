@@ -1,0 +1,3 @@
+contrast,reference_procedure,candidate_procedure,point_RMSE_difference_W_per_kg,CI_2_5_W_per_kg,CI_97_5_W_per_kg,bootstrap_draws,interpretation
+primary,C+D,C+D+V,-0.01232739594528387,-0.03239170162989316,0.0056473627700283063,10000,primary_exploratory
+secondary,D,D+V,-0.018641542015333745,-0.064770999989377159,0.017249142874041414,10000,secondary_descriptive
