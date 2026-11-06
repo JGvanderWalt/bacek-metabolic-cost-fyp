@@ -1,0 +1,39 @@
+# Python and notebook by-products
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+*.py[cod]
+.pytest_cache/
+
+# Raw and prepared data; private work and reproducibility inputs
+*.h5
+*.hdf5
+*.mat
+Bacek2023_subject_biological_data.csv
+**/All subject data/
+**/Final Processed Data/
+/local_inputs/
+/private/
+/manifests/
+/results/primary/
+/results/extensions/
+/notebooks/*_results/
+/notebooks/*_results.zip
+/notebooks/*_summary.json
+/*.zip
+/data/*
+!/data/DATA_ACCESS.md
+
+# Personal and editor files
+*signature*.png
+*signature*.jpg
+*signature*.jpeg
+.env
+.env.*
+*.key
+*.pem
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
