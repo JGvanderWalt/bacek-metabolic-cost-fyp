@@ -4,16 +4,19 @@ Python and MATLAB code for a machine-learning feasibility investigation using th
 
 The primary evaluation uses **284 unrestricted walking trials from 21 participants**, with participant-disjoint model evaluation. A separate experiment examines calibration for known individuals using designated labelled trials.
 
-## Principal results
+## Principal results — foundational shared-penalty procedures
 
 | Prediction procedure | Held-out root mean squared error (RMSE; W/kg) |
 | --- | ---: |
 | Training-mean reference (B0) | 0.9685 |
+| Prescribed speed only (B1) | 0.5672 |
 | Development-selected gait (G) | 0.6026 |
 | Prescribed speed and relative cadence (C) | 0.5588 |
 | Prescribed conditions plus gait (C+G) | 0.6425 |
 
-The gait-only procedure achieved lower error than the training-mean reference, while the tested combined procedure had higher error than prescribed conditions alone. The participant-held-out folds were inspected during exploratory development; these estimates are **exploratory-informed**, and external-cohort performance remains untested.
+The gait-only procedure achieved lower error than the training-mean reference, while the tested combined shared-penalty procedure had higher error than prescribed conditions alone. The participant-held-out folds were inspected during exploratory development; these estimates are **exploratory-informed**, and external-cohort performance remains untested.
+
+The current report also presents separately verified condition-preserving Ridge comparisons and supplementary speed-only and personal-reference contrasts. This public snapshot contains the foundational code and aggregate CSVs, but not the complete supplementary run and saved-ledger verification package. The newer findings do not replace the foundational outputs linked below.
 
 ## Files
 
@@ -37,7 +40,7 @@ The repository provides code and aggregate results. The prepared HDF5, biologica
 | [13](notebooks/13_Bacek_Participant_Condition_Error_Diagnostics.ipynb), [14](notebooks/14_Bacek_Clustered_Uncertainty_Influence_Selection_Stability.ipynb), [15](notebooks/15_Bacek_Computational_Repeatability_Requirements_Audit.ipynb) | Examine prediction error, clustered uncertainty, influence, selection stability and computational verification. | [Error diagnostics](results/E5_1_overall_diagnostics_metrics.csv), [bootstrap intervals](results/E5_2_paired_bootstrap_intervals.csv), [balanced metrics](results/E5_2_participant_balanced_metrics.csv), [independent metric recalculation](results/independent_primary_metric_recalculation.csv). |
 | [17 (EXT-S0)](notebooks/17_EXT_S0_Shared_Source_Feature_Preflight.ipynb), [E3.4](notebooks/E3_4_Between_Cycle_Variability_Local.ipynb), [E5.3](notebooks/E5_3_Retained_Cycle_Budget_Local.ipynb) | Verify shared feature inputs; assess between-cycle dispersion and retained-cycle observation budgets. | [Variability metrics](results/E3_4_cycle_variability_metrics.csv) and [intervals](results/E3_4_cycle_variability_intervals.csv); [cycle-budget metrics](results/E5_3_cycle_budget_metrics.csv) and [intervals](results/E5_3_cycle_budget_intervals.csv). |
 
-The linked CSVs provide aggregate results; the notebooks also generate detailed prediction, selection, provenance and verification records retained privately. E3.4 and E5.3 completed local checks; the independent metric-reconstruction check (N3) remains outstanding.
+The linked CSVs provide aggregate results; the notebooks also generate detailed prediction, selection, provenance and verification records retained privately. E3.4 and E5.3 passed their original local checks. **Independent N3 numerical reconstruction passed on 9 November 2026 (322/322 checks)** using separately implemented calculations on the privately retained full-precision prediction and resampling ledgers, including the E5.3 split-half summaries. This later verification does not change the original execution-time `PASS_LOCAL_PENDING_INDEPENDENT_N3` statuses. It does not constitute independent raw-HDF5 reconstruction or external predictive validation; the N3 audit scripts and full-precision private records are not distributed in this public repository.
 
 ## Python environment
 
