@@ -18,6 +18,6 @@ Place the required files in the notebooks' current working directory, usually `n
 - The fixed E1.3 calibration-trial assignments and E4.2 participant-subset CSV (where specified).
 - For EXT-S0, E3.4 and E5.3: the exact reference/extension ZIPs and version-matched protocol amendment and annex documents required by the notebook code.
 
-The E3.4/E5.3 execution records document completed local checks; independent metric-reconstruction verification (N3) remains outstanding. The separate protocol annexes and dated amendment approval record are not included in this repository.
+The original E3.4/E5.3 execution records document completed local checks and preserve their execution-time `PASS_LOCAL_PENDING_INDEPENDENT_N3` status. A separately documented independent N3 numerical reconstruction subsequently **passed on 9 November 2026 (322/322 checks)** using retained full-precision prediction, resampling and split-half records. This audit did not regenerate the source HDF5 or independently rerun model fitting. The private N3 audit evidence, separate protocol annexes and dated amendment approval record are not included in this repository.
 
 The prepared HDF5, participant-level biological table and detailed trial-level records are retained privately. Access and redistribution are subject to applicable source-data licences and institutional permissions.
